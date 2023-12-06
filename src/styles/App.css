@@ -1,0 +1,148 @@
+/* mon-projet/src/styles/App.css */
+/* Styles généraux */
+
+/* Style de la boîte pour ajouter les TODO */
+.add-box {
+  background-color: #e1f5fe; /* Fond bleu clair */
+  border: 2px solid #2196f3; /* Bordure bleue */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style de la boîte pour afficher les TODO */
+/* .display-box {
+  background-color: #27abbd; 
+  border: 2px solid #00bcd4; 
+  border-radius: 10px;
+  padding: 20px;
+} */
+
+
+.display-box {
+  background: linear-gradient(#4c6faf, #07052b); /* Texture définie par un dégradé linéaire */
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  transition: background 0.3s ease-in-out; /* Transition pour un effet fluide */
+
+  /* Animation de la texture de la boîte */
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Ajout d'un effet de changement de couleur lorsqu'on survole la boîte */
+.display-box:hover {
+  background: linear-gradient(#008CBA, #00729a); /* Nouvelle texture au survol */
+}
+
+
+
+
+/* Style du titre */
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333; 
+  background: linear-gradient(90deg, #110c07, #ffffff); 
+  display: inline-block;
+  color: #111857;
+  border: #000000 solid 3px;
+  position: relative;
+}
+
+
+.title img {
+  width: 36px; 
+  height: 36px;
+  margin-left: 10px;
+}
+
+
+.todo-item {
+  margin-bottom: 10px;
+}
+
+
+.todo-done {
+  text-decoration: line-through;
+  color: #380707;
+}
+
+
+.add-button {
+  background-color: #6a4caf; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-button:hover {
+  background-color: #1c285e; 
+}
+
+/* Dans votre feuille de style CSS */
+.checckbox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Style du cercle extérieur */
+.checckbox::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7e0e0e;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Style du point à l'intérieur de la checkbox */
+.checckbox::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7e0e0e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Ajout de styles au clic */
+.checckbox:checked::before {
+  background: #4CAF50; /* Couleur verte pour le cercle extérieur lorsqu'il est coché */
+}
+
+.checckbox:checked::after {
+  opacity: 1; /* Rend le point à l'intérieur visible lorsqu'il est coché */
+}
+
+

@@ -1,0 +1,53 @@
+/* mon-projet/src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(83, 15, 139)
+}
+
+h1 {
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333; 
+  background: linear-gradient(90deg, #ff8c00, #ffcc00); 
+  display: inline-block;
+  color: #333;
+}
+
+h1 img {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: #140946;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.button{
+  background-color: #008CBA;
+  color: #380707;
+}
