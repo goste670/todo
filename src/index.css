@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: rgb(0, 159, 212);
+
+}
+
+.container {
+  border: 2px solid rgb(9, 54, 70);
+  padding: 20px;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+button {
+  margin: 5px;
+  background-color: blue;
+  border: 2px solid brown;
+}
+
+
+h1 {
+  color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-img {
+  margin-left: 10px;  
+}
